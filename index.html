@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Manager Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+    <div class="card">
+      <h1>Task Manager</h1>
+
+      <!-- Input Row -->
+      <div class="input-group">
+        <input type="text" id="taskTitle" placeholder="Task Title">
+        <input type="text" id="taskDesc" placeholder="Description">
+        <button onclick="addTask()">Add</button>
+      </div>
+
+      <!-- Search -->
+      <input type="text" id="searchBox" placeholder="Search tasks..." onkeyup="searchTask()" class="search">
+
+      <!-- Task List -->
+      <div id="taskList" class="task-list"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
